@@ -16,6 +16,7 @@ A script file which simply runs the `rent.py` script with default values.
 ## Usage
 To run the `rent.py` script without the default values listed above, use a flag followed by its values to change them. Below is an example call.
 > python3 rent.py -b 0.65 -s 0.35 -bn 3 -sn 2 -p 220 -r 3509.50
+
 Any flags that are left out will be replaced with the default values.
 
 ## Credits
