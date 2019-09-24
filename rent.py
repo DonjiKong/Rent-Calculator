@@ -11,36 +11,42 @@ def get_arguments():
                         dest = "big_ratio",
                         required = False,
                         action = "store",
+                        type = float,
                         default = default_values.BIG_ROOM_FRAC,
                         help = "Percentage of the bigger room to the total bedroom space")
     parser.add_argument("-s", "--small_ratio",
                         dest = "small_ratio",
                         required = False,
                         action = "store",
+                        type = float,
                         default = default_values.SMALL_ROOM_FRAC,
                         help = "Percentage of the smaller room to the total bedroom space")
     parser.add_argument("-bn", "--big_num",
                         dest = "big_num",
                         required = False,
                         action = "store",
+                        type = int,
                         default = default_values.BIG_ROOM_PEOPLE,
                         help = "Number of people staying in the big room")
     parser.add_argument("-sn", "--small_num",
                         dest = "small_num",
                         required = False,
                         action = "store",
+                        type = int,
                         default = default_values.SMALL_ROOM_PEOPLE,
                         help = "Number of people staying in the small room")
     parser.add_argument("-p", "--parking",
                         dest = "parking",
                         required = False,
                         action = "store",
+                        type = int,
                         default = default_values.TOTAL_PARKING,
                         help = "Price (in dollars) of the total parking cost")
     parser.add_argument("-r", "--rent",
                         dest = "rent",
                         required = False,
                         action = "store",
+                        type = int,
                         default = default_values.TOTAL_RENT,
                         help = "Price (in dollars) of the total rent cost")
     # Parse parameters
